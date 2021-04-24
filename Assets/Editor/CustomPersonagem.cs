@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEditor;
 
 [CanEditMultipleObjects, CustomEditor(typeof(Personagem))]
-public class CustomPersonagem : Editor
-{
-    public override void OnInspectorGUI()
-    {
+public class CustomPersonagem : Editor {
+    public override void OnInspectorGUI() {
         base.OnInspectorGUI();
 
         Personagem personagem = (Personagem)this.target;
